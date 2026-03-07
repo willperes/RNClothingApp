@@ -8,7 +8,8 @@
     "scheme": "rnclothingapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.willperes2.rn-clothing-app"
     },
     "android": {
       "adaptiveIcon": {
