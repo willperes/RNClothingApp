@@ -48,7 +48,6 @@ build/
 *.log
 
 # IDE / Editor
-.vscode/
 .idea/
 *.swp
 *.swo
