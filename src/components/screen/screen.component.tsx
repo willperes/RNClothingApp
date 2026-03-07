@@ -2,13 +2,12 @@ import React from "react";
 import { KeyboardAvoidingView, Platform } from "react-native";
 
 import { Box, BoxProps } from "@/components/box/box.component";
-import { useAppSafeArea } from "@/hooks/use-app-safe-area/use-app-safe-area.hook";
-import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
-
 import {
   ScrollViewContainer,
   ViewContainer,
 } from "@/components/screen/components/screen-container.component";
+import { useAppSafeArea } from "@/hooks/use-app-safe-area/use-app-safe-area.hook";
+import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
 
 export interface ScreenProps extends BoxProps {
   HeaderComponent?: React.ReactNode;

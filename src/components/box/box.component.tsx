@@ -38,11 +38,11 @@ export const TouchableOpacityBox = createRestyleComponent<
   Theme
 >(
   [backgroundColor, spacing, spacingShorthand, layout, border],
-  TouchableOpacity,
+  TouchableOpacity
 );
 
 export type PressableBoxProps = PressableProps & RestyleTypes;
 export const PressableBox = createRestyleComponent<PressableBoxProps, Theme>(
   [backgroundColor, spacing, spacingShorthand, layout, border],
-  Pressable,
+  Pressable
 );

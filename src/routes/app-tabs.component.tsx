@@ -1,6 +1,8 @@
-import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
-import { NativeTabs } from "expo-router/unstable-native-tabs";
 import React from "react";
+
+import { NativeTabs } from "expo-router/unstable-native-tabs";
+
+import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
 
 export default function AppTabs() {
   const theme = useAppTheme();
