@@ -29,7 +29,7 @@ export const lightTheme = createTheme({
 });
 
 export type Theme = typeof lightTheme;
-export type ThemeColors = typeof lightTheme.colors;
+export type ThemeColor = keyof Theme["colors"];
 
 export const darkTheme: Theme = createTheme({
   ...lightTheme,
