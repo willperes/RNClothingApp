@@ -1,6 +1,6 @@
 import { HttpClient } from "@/infra/http";
 
-import { UserDetailsResponseDto } from "./dtos/user-details.dto";
+import { UserDetailsResponseDTO } from "./dtos/user-details.dto";
 import { userDetailsMapper } from "./mappers/user-details.mapper";
 import { UserDetails } from "./models/user-details.model";
 
@@ -10,7 +10,7 @@ export class UserService {
   constructor(private readonly httpClient: HttpClient) {}
 
   getUserDetails: () => Promise<UserDetails> = async () => {
-    const response = await this.httpClient.request<UserDetailsResponseDto>({
+    const response = await this.httpClient.request<UserDetailsResponseDTO>({
       url: `${this.baseURL}/details`,
       method: "get",
     });

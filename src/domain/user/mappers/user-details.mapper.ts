@@ -1,8 +1,8 @@
-import { UserDetailsResponseDto } from "../dtos/user-details.dto";
+import { UserDetailsResponseDTO } from "../dtos/user-details.dto";
 import { UserDetails } from "../models/user-details.model";
 
 export const userDetailsMapper = {
-  fromDTO: (dto: UserDetailsResponseDto): UserDetails => {
+  fromDTO: (dto: UserDetailsResponseDTO): UserDetails => {
     return {
       id: dto.id,
       fullName: dto.full_name,
