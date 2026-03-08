@@ -1,9 +1,15 @@
-import axios, { AxiosError, AxiosResponse } from "axios";
+import axios, { AxiosError, AxiosInstance, AxiosResponse } from "axios";
 
 import { HttpError } from "../http";
 import { HttpClient, HttpRequest, HttpResponse } from "../http/http-client";
 
 export class AxiosHttpClientAdapter implements HttpClient {
+  private readonly axiosInstance: AxiosInstance;
+
+  constructor(baseURL: string) {
+    this.axiosInstance = axios.create({ baseURL });
+  }
+
   private _formatResponse(response: AxiosResponse): HttpResponse {
     return {
       statusCode: response.status,
@@ -17,7 +23,7 @@ export class AxiosHttpClientAdapter implements HttpClient {
   }
 
   async request(request: HttpRequest): Promise<HttpResponse> {
-    return axios
+    return this.axiosInstance
       .request({
         url: request.url,
         method: request.method,
