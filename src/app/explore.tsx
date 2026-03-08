@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 
-import { Screen } from "@/components/screen/screen.component";
+import { Screen } from "@/components/layout";
 import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
 
 export default function ExploreScreen() {

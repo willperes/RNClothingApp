@@ -1,6 +1,6 @@
 import { Text } from "react-native";
 
-import { Screen } from "@/components/screen/screen.component";
+import { Screen } from "@/components/layout";
 import { useGetUserDetails } from "@/domain/user/hooks/get-user-details.hook";
 import { useAppTheme } from "@/hooks/use-app-theme/use-app-theme.hook";
 
